@@ -1,0 +1,115 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: black;
+    font-family: Roboto;
+}
+
+.board {
+    width: 80vmin;
+    height: 80vmin;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1vmin;
+    background: #777777;
+    
+}
+
+.board .tile {
+    display: flex;
+    background: #bbbbbb;
+    font-size: 9vmin;  /*was originally 15vmin */
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.score-container {
+    height: 10vmin;
+    width: 50vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #777777;
+    font-size: 5vmin;
+}
+
+.score-title {
+    padding-right: 2vmin;
+}
+
+.gameOver {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+    flex-direction: column;
+}
+
+.gameOver button {
+    font-size: inherit;
+    background: white;
+    border: 1px solid black;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.gameOver button:hover {
+    background: black;
+    color: white;
+    border-color: white;
+}
+
+.gameOver.show {
+    display: flex;
+}
+
+.tile.noShow {
+    visibility: hidden;
+}
+
+.tile.one {
+    background-color: bisque;
+}
+
+.tile.two {
+    background-color: burlywood;
+}
+
+.tile.three {
+    background-color: brown;
+}
+
+.tile.four {
+    background-color:blueviolet;
+}
+
+.tile.five {
+    background-color: yellow;
+}
+
+.tile.six {
+    background-color: green;
+}
+
+.tile.seven {
+    background-color: red;
+}
+
+.tile.eight {
+    background-color: palevioletred;
+}
